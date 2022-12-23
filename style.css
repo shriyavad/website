@@ -1,0 +1,349 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #ffff;
+}
+.parallax {
+    /* The image used */
+    background-image: url("5-dots.png");
+  
+    /* Set a specific height */
+    min-height: 750px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 800px;}
+#header{
+    width: 100%;
+    height: 100vh;
+ 
+}
+.container{
+    padding: 20px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h2 span{
+    color: #FAAFBA;
+}
+.logo{
+    width: 140px;
+    height: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px; 
+    position: relative;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #FAAFBA; 
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 17%;
+    font-size:30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top:20px;
+}
+.header-text h1 span{
+    color: #FAAFBA;
+}
+
+/*-------------about-----------*/
+#about{
+    padding: 80px 0;
+    color: #ababaa;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: left;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+    opacity: 0;
+  }
+  
+  .text {
+    text-align: center;
+  }
+  
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 60%;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; 
+    position: relative;
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #FAAFBA; 
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.tab-links.active-link:hover::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #FAAFBA;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-----------portfolio---------*/
+#portfolio{
+    padding: 50px 0;
+}
+.parallax2{
+    background-image: url("5-dots.png");
+  
+    /* Set a specific height */
+    min-height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 800px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: rleative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    padding: 0 0 15px;
+}
+.layer1{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+.layer a{
+    font-size: 15px;
+    margin: 170px;
+    font-weight: 500;
+    cursor: pointer; 
+    color: #ffffff;
+    text-decoration: none; 
+    position: relative;
+}
+.layer.a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #FAAFBA; 
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.layer.a:hover::after{
+    width: 100%;
+    color: #FAAFBA;
+}
+
+/*---------------contact-----------------*/
+.contact-left{
+    flex-basis: 45%; 
+}
+.contact-right{
+    flex-basis: 50%; 
+}
+
+.contact-left p{
+    margin: 30px;
+}
+.contact-left p i{
+    color: #FAAFBA;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    color: #ababaa;
+    margin-left: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #FAAFBA;
+    transform: translateY(5px);
+}
+.btn.btn2{
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 12px;
+    background: #ababaa;
+    border-radius: 4px;
+}
+.btn.btn2:hover{
+    background: #FAAFBA;
+}
+.contact-right form{
+    width: 100%;
+}
+#msg{
+    color:#FAAFBA;
+    margin-top:10px;
+    display: block;
+}
+form input, form textarea{
+    width:100%;
+    border: 0px;
+    outline: none;
+    background: #ababaa;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    font-size: 18px;
+    border-radius: 4px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #FAAFBA;
+    font-weight: 300;
+    margin-top: 20px;
+    color: black;
+}
+/*----------css for small screen----------*/
+@media only screen and (max-width:600px){
+
+}
